@@ -34,10 +34,10 @@ tidy_set <- merged_data[grep("Subject|Activity|mean|std", var_names)] %>%
     summarise_each(funs(mean))
 
 ## A bit of cleaning up...
-print("\n\nCleaning environment of unnecessary variables and data frames...")
+print("Cleaning environment of unnecessary variables and data frames...")
 rm(x_train, x_test, y_train, y_test, sub_train, sub_test, act_labels, var_names,
    train_merged, test_merged, merged_data)
-print("\n\nDone")
+print("Done")
 
 ## Rename column names: Except the first two all column names are pre-fixed with "avg_"
 names(tidy_set) <- sub("^", "avg_", names(tidy_set))

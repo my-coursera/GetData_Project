@@ -7,7 +7,7 @@ author: "Me"
 
 1. Execution begins with `run_analysis.R`. Data is read, training and test separately, by `read_data.R`, which is invoked from within.
 
-2. The training data set is formed by column-wise combination of the subject, activity, and the         corresponding data. Similarly for the test data.
+2. The training data set is formed by column-wise combination of the subject, activity, and the corresponding data. Similarly for the test data.
 
 3. These two data sets are then combined row-wise.
 
